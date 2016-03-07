@@ -1,26 +1,20 @@
-# Ember-blur-up
+# Ember Blur Up
 
-This README outlines the details of collaborating on this Ember addon.
+Sexy progressive loading for large background images in your Ember app!
+
+## Why?
+Making the user wait for a large image to download is a bad user experience. Read more about this problem on [Facebook's blog](https://code.facebook.com/posts/991252547593574/the-technology-behind-preview-photos).
 
 ## Installation
 
-* `git clone` this repository
-* `npm install`
-* `bower install`
+```bash
+ember install ember-blur-up
+```
 
-## Running
+## Usage
 
-* `ember server`
-* Visit your app at http://localhost:4200.
+Just drop the `{{blur-up}}`-component wherever you need a large background-image.
 
-## Running Tests
-
-* `npm test` (Runs `ember try:testall` to test your addon against multiple Ember versions)
-* `ember test`
-* `ember test --server`
-
-## Building
-
-* `ember build`
-
-For more information on using ember-cli, visit [http://www.ember-cli.com/](http://www.ember-cli.com/).
+The component requires 2 arguments to work:
+* `url`: The URL to the original full-size image;
+* `base64`: A base64-string of a tiny (max 100x100px) version of the same image (make sure it has the same dimensions).

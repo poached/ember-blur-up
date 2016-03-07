@@ -2,5 +2,5 @@
 'use strict';
 
 module.exports = {
-  name: 'ember-blur-up'
+  name: 'ember-blur-up',
 };

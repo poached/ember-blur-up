@@ -1,3 +1,14 @@
-<h2 id="title">Welcome to Ember</h2>
+<span class="img-container">
+  <img src={{imageURL}} width="140" height="100" />
+  <p class="before">img-tag</p>
+</span>
 
-{{outlet}}
+<span class="vs">VS</span>
+
+<span class="img-container">
+  {{blur-up url=imageURL base64=base64Data}}
+  <p class="after">ember-blur-up</p>
+</span>
+
+<p>(Clear your cache and refresh the page to see the difference in loading speed)</p>
+

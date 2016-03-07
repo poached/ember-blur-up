@@ -1,0 +1,37 @@
+* {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+body {
+  text-align: center;
+  padding-top: 100px;
+  color: #525252;
+}
+
+.vs {
+  vertical-align: middle;
+  top: -15px;
+  position: relative;
+  padding: 0 20px;
+  color: #C38F4A;
+  font-style: italic;
+}
+
+.img-container {
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.img-container p {
+  color: gray;
+  font-size: 14px;
+  margin-top: 5px;
+}
+.img-container p.before {
+  color: #BF3434;
+}
+.img-container p.after {
+  color: #40AF40;
+  font-weight: bold;
+}
