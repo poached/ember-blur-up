@@ -11,11 +11,11 @@
     "start": "ember server",
     "test": "ember try:testall"
   },
-  "repository": "",
+  "repository": "https://github.com/Ludu/ember-blur-up",
   "engines": {
     "node": ">= 0.10.0"
   },
-  "author": "",
+  "author": "Ludu",
   "license": "MIT",
   "devDependencies": {
     "broccoli-asset-rev": "^2.2.0",
@@ -38,7 +38,15 @@
     "loader.js": "^4.0.0"
   },
   "keywords": [
-    "ember-addon"
+    "ember-addon",
+    "background",
+    "background-image",
+    "progressive",
+    "loading",
+    "load",
+    "blur",
+    "cover",
+    "photo"
   ],
   "dependencies": {
     "ember-cli-babel": "^5.1.5",
