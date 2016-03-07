@@ -2,7 +2,7 @@
 
 Sexy progressive loading for large background images in your Ember app!
 
-![Preview](https://raw.github.com/Ludu/ember-blur-up/tests/dummy/public/images/blur-up.gif)
+![Preview](https://raw.github.com/Ludu/ember-blur-up/master/tests/dummy/public/images/blur-up.gif)
 
 ## Why?
 Making the user wait for a large image to download is a bad user experience. Read more about this problem on [Facebook's blog](https://code.facebook.com/posts/991252547593574/the-technology-behind-preview-photos).
