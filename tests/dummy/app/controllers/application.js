@@ -1,6 +1,6 @@
 import Ember from 'ember';
 import base64Image from './base64-image';
-import env from 'ember-blur-up/config/environment';
+import env from 'dummy/config/environment';
 
 export default Ember.Controller.extend({
   base64Data: base64Image,
