@@ -1,6 +1,6 @@
 {
   "name": "ember-blur-up",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Sexy progressive loading for large background images",
   "directories": {
     "doc": "doc",
