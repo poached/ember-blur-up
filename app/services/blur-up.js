@@ -77,6 +77,6 @@ export default Ember.Service.extend({
 
   _getCSS(url) {
     let css = `background-image: url(${url});`;
-    return new Ember.Handlebars.SafeString(css);
+    return Ember.String.htmlSafe(css);
   }
 });
