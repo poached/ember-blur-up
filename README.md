@@ -21,4 +21,4 @@ Just drop the `{{blur-up}}`-component wherever you need a large background-image
 
 The component requires 2 arguments to work:
 * `url`: The URL to the original full-size image;
-* `base64`: A base64-string of a tiny (max 100x100px) version of the same image (make sure it has the same dimensions).
+* `base64`: A base64-string of a tiny (max 100x100px) version of the same image (make sure it has the same aspect ratio as the original).
