@@ -5,7 +5,13 @@
 
 import Ember from 'ember';
 
-const IS_FASTBOOT = typeof module !== 'undefined';
+const {
+  Service,
+  RSVP: { Promise },
+  String: { htmlSafe },
+  inject: { service },
+  computed: { reads },
+} = Ember;
 
 const DEFAULT_OPTS = {
   blur: 100,
@@ -13,7 +19,7 @@ const DEFAULT_OPTS = {
   height: 823
 };
 
-export default Ember.Service.extend({
+export default Service.extend({
 
   getBlur(base64URI, opts = {}) {
     if (!base64URI) return false;
@@ -25,11 +31,10 @@ export default Ember.Service.extend({
   },
 
   getImage(URL) {
-    return new Ember.RSVP.Promise((resolve, reject) => {
+    return new Promise((resolve, reject) => {
       if (!URL) return reject("Missing URL!");
 
-      // Cannot use "new Image()" in Node...
-      if (IS_FASTBOOT) return reject("Cannot use ember-blur-up in FastBoot...");
+      if (typeof FastBoot !== 'undefined') return;
 
       let newImg = new Image();
       newImg.src = URL;
@@ -77,6 +82,6 @@ export default Ember.Service.extend({
 
   _getCSS(url) {
     let css = `background-image: url(${url});`;
-    return Ember.String.htmlSafe(css);
+    return htmlSafe(css);
   }
 });

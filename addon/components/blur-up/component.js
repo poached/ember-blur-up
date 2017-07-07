@@ -1,10 +1,16 @@
 import Ember from 'ember';
 import layout from './template';
 
-export default Ember.Component.extend({
-  layout: layout,
+const {
+  Component,
+  inject: { service },
+  Logger,
+} = Ember;
 
-  blurUp: Ember.inject.service('blur-up'),
+export default Component.extend({
+  layout,
+
+  blurUp: service('blur-up'),
   attributeBindings: ['blurredCoverCSS:style'],
   classNames: ['ember-blur-up'],
 
@@ -22,7 +28,7 @@ export default Ember.Component.extend({
     .then((css) => {
       this.set('coverCSS', css); 
     }, (err) => {
-      console.log(err);
+      Logger.error(err);
     });
   }
 });
