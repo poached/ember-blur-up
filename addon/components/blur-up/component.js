@@ -26,7 +26,9 @@ export default Component.extend({
     // Now, fetch the real one!
     this.get('blurUp').getImage(imageURL)
     .then((css) => {
-      this.set('coverCSS', css); 
+      if (!this.isDestroyed) {
+        this.set('coverCSS', css);
+      }
     }, (err) => {
       Logger.error(err);
     });
